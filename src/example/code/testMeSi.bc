@@ -1,0 +1,99 @@
+Compiled from "TestMe.java"
+public class example.code.TestMe extends java.lang.Object{
+public example.code.TestMe();
+  Code:
+   0:	aload_0
+   1:	invokespecial	#1; //Method java/lang/Object."<init>":()V
+   4:	return
+
+public static void main(java.lang.String[]);
+  Code:
+   0:	invokestatic	#2; //Method TestMe:()V
+   3:	return
+
+public static void TestMe();
+  Code:
+   0:	iconst_1
+   1:	istore_0
+   2:	iconst_2
+   3:	istore_1
+   4:	iconst_3
+   5:	istore_2
+   6:	new	#3; //class example/code/TestMeObjectivley
+   9:	dup
+   10:	iload_0
+   11:	iload_1
+   12:	iload_2
+   13:	invokespecial	#4; //Method example/code/TestMeObjectivley."<init>":(III)V
+   16:	astore_3
+   17:	iload_0
+   18:	iload_1
+   19:	iadd
+   20:	istore	4
+   22:	iload_0
+   23:	iload_2
+   24:	iadd
+   25:	istore	5
+   27:	iload_1
+   28:	iload_2
+   29:	iadd
+   30:	istore	6
+   32:	iconst_0
+   33:	istore	7
+   35:	iload	7
+   37:	bipush	10
+   39:	if_icmpge	56
+   42:	getstatic	#5; //Field java/lang/System.out:Ljava/io/PrintStream;
+   45:	iload	4
+   47:	invokevirtual	#6; //Method java/io/PrintStream.println:(I)V
+   50:	iinc	7, 1
+   53:	goto	35
+   56:	iconst_0
+   57:	istore	7
+   59:	iload	7
+   61:	bipush	10
+   63:	if_icmpge	80
+   66:	getstatic	#5; //Field java/lang/System.out:Ljava/io/PrintStream;
+   69:	iload	5
+   71:	invokevirtual	#6; //Method java/io/PrintStream.println:(I)V
+   74:	iinc	7, 1
+   77:	goto	59
+   80:	iconst_0
+   81:	istore	7
+   83:	iload	7
+   85:	bipush	10
+   87:	if_icmpge	104
+   90:	getstatic	#5; //Field java/lang/System.out:Ljava/io/PrintStream;
+   93:	iload	6
+   95:	invokevirtual	#6; //Method java/io/PrintStream.println:(I)V
+   98:	iinc	7, 1
+   101:	goto	83
+   104:	iinc	4, 1
+   107:	iinc	5, 1
+   110:	iinc	6, 1
+   113:	iinc	0, 1
+   116:	iinc	1, 1
+   119:	iinc	2, 1
+   122:	iload	4
+   124:	bipush	10
+   126:	if_icmpne	104
+   129:	iload_0
+   130:	iload	4
+   132:	if_icmpgt	147
+   135:	iload_1
+   136:	iload	5
+   138:	if_icmpgt	147
+   141:	iload_2
+   142:	iload	6
+   144:	if_icmple	158
+   147:	getstatic	#5; //Field java/lang/System.out:Ljava/io/PrintStream;
+   150:	ldc	#7; //String Test Complete
+   152:	invokevirtual	#8; //Method java/io/PrintStream.println:(Ljava/lang/String;)V
+   155:	goto	166
+   158:	getstatic	#5; //Field java/lang/System.out:Ljava/io/PrintStream;
+   161:	ldc	#9; //String The other test complete
+   163:	invokevirtual	#8; //Method java/io/PrintStream.println:(Ljava/lang/String;)V
+   166:	return
+
+}
+
